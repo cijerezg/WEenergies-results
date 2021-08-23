@@ -72,10 +72,10 @@ app.layout = html.Div([
     [dash.dependencies.Input('crossfilter-axis','value')])
 def update_graph(axis_name):
     if axis_name == 'Errors':
-        fig = px.scatter(df_scat, x='SD 7' , y='SD 14',
+        fig = px.scatter(df_scat, x='Score 1' , y='Score 2',
                          hover_name ='ids')
     else:
-        fig = px.scatter(df_scat, x='Ranking SD 7', y='Ranking SD 14',
+        fig = px.scatter(df_scat, x='Ranking 1', y='Ranking 2',
                          hover_name ='ids')
 
     fig.update_layout(font= dict(size=20),hovermode='closest')
