@@ -9,7 +9,11 @@ import pandas as pd
 
 path = 'data/'
 
-met_type = 'bus_N'
+parser = argparse.ArgumentParser()
+parser.add_argument('name', help='Meter type name, nargs="?")
+args = parser.parse_args()
+
+met_type = args.name
 
 meters_dict = {'res_N':2,'bus_N':3, 'bus_B':5}
 
