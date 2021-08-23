@@ -47,3 +47,9 @@ python visualization_SD_freq_meters.py <filename>
 ```<filename>``` is ```SDs.npy``` for slowing down meters, and ```freqs.npy``` for frequency analysis.
 
 The visualizations look like this respectively: 
+
+![visual_nn](https://user-images.githubusercontent.com/35930061/130512364-87229092-e5d3-47f3-94e8-bd395141da10.png)
+
+and 
+
+
