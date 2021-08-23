@@ -1,5 +1,5 @@
 import numpy as np
-from anomalous_kwh_detection import nn_architectures
+from anom_kwh_detection import nn_architectures
 import argparse
 import utils
 import torch
