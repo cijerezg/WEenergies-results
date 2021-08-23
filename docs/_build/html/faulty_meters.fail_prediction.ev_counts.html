@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>faulty_meters.fail_prediction.ev_counts module &mdash; Faulty meters study 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="faulty_meters.anomaly_detection module" href="faulty_meters.anomaly_detection.html" />
+    <link rel="prev" title="faulty_meters.fail_prediction.autoencoder module" href="faulty_meters.fail_prediction.autoencoder.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Faulty meters study
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">faulty_meters</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="faulty_meters.html">faulty_meters package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="faulty_meters.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="faulty_meters.anom_kwh_detection.html">faulty_meters.anom_kwh_detection package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="faulty_meters.fail_prediction.html">faulty_meters.fail_prediction package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="faulty_meters.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faulty_meters.html#module-faulty_meters">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Faulty meters study</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">faulty_meters</a> &raquo;</li>
+        
+          <li><a href="faulty_meters.html">faulty_meters package</a> &raquo;</li>
+        
+          <li><a href="faulty_meters.fail_prediction.html">faulty_meters.fail_prediction package</a> &raquo;</li>
+        
+      <li>faulty_meters.fail_prediction.ev_counts module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/faulty_meters.fail_prediction.ev_counts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-faulty_meters.fail_prediction.ev_counts">
+<span id="faulty-meters-fail-prediction-ev-counts-module"></span><h1>faulty_meters.fail_prediction.ev_counts module<a class="headerlink" href="#module-faulty_meters.fail_prediction.ev_counts" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="faulty_meters.fail_prediction.ev_counts.classifiers">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">faulty_meters.fail_prediction.ev_counts.</span></span><span class="sig-name descname"><span class="pre">classifiers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fail</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.fail_prediction.ev_counts.classifiers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class is used to train and evaluate the random forest and logistic
+regression algorithms. It trains on the event counts over a time period.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="faulty_meters.fail_prediction.ev_counts.classifiers.implement_classifiers">
+<span class="sig-name descname"><span class="pre">implement_classifiers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.fail_prediction.ev_counts.classifiers.implement_classifiers" title="Permalink to this definition">¶</a></dt>
+<dd><p>It trains random forest and logistic regression. It outputs the
+predicted probabilities.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X_train</strong> (<em>array</em>) – training data.</p></li>
+<li><p><strong>X_test</strong> (<em>array</em>) – testing data.</p></li>
+<li><p><strong>y_train</strong> (<em>array</em>) – training labels.</p></li>
+<li><p><strong>y_test</strong> (<em>array</em>) – testing labels.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>probs_LR</strong> (<em>list</em>) – Output probabilities of logistic regression. First element is
+training; second element is teting.</p></li>
+<li><p><strong>probs_RF</strong> (<em>list</em>) – Output probabilities of random forest. First element is
+training; second element is teting.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="faulty_meters.fail_prediction.ev_counts.classifiers.training_testing_split">
+<span class="sig-name descname"><span class="pre">training_testing_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">percent</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.fail_prediction.ev_counts.classifiers.training_testing_split" title="Permalink to this definition">¶</a></dt>
+<dd><p>It generates the train test split as well as the labels
+(0 for functioning and 1 for failing).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>percent</strong> (<em>float</em><em> (</em><em>between 0 and 1</em><em>)</em>) – It represents the percentage that goes to testing data.
+For example, if set to 0.8, then 80% of the data will be
+for testing.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="faulty_meters.fail_prediction.ev_counts.first_and_last">
+<span class="sig-prename descclassname"><span class="pre">faulty_meters.fail_prediction.ev_counts.</span></span><span class="sig-name descname"><span class="pre">first_and_last</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.fail_prediction.ev_counts.first_and_last" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function computes the first and last day a meter reported
+data. This function comes in handy especially for failing meters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>array</em>) – The raw (cumulative) KWH array. Shape is (n, m), where n
+is number of meters, and m is time.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>firsts</strong> (<em>ndarray</em>) – An array of shape n that contains the first day the meters
+reported data.</p></li>
+<li><p><strong>lasts</strong> (<em>ndarray</em>) – An array of shape n that contains the last day the meters
+reported data</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="faulty_meters.fail_prediction.ev_counts.preprocess_data_fail_pred">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">faulty_meters.fail_prediction.ev_counts.</span></span><span class="sig-name descname"><span class="pre">preprocess_data_fail_pred</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fail</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.fail_prediction.ev_counts.preprocess_data_fail_pred" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class sets up the event data to be passed through
+a random forest classifier or logistic regression.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="faulty_meters.fail_prediction.ev_counts.preprocess_data_fail_pred.counting_evs">
+<span class="sig-name descname"><span class="pre">counting_evs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">firsts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lasts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fail_period</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.fail_prediction.ev_counts.preprocess_data_fail_pred.counting_evs" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method calls select_mets_evs, then it further filters
+failing to those that failed within high and high+fail_period.
+Finally, it adds up the events in the low high time period.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>firsts</strong> (<em>list</em>) – The first list element contains the array for
+functioning meters, second element failing meters</p></li>
+<li><p><strong>lasts</strong> (<em>list</em>) – The first list element contains the array for
+functioning meters, second element failing meters</p></li>
+<li><p><strong>low</strong> (<em>integer</em>) – low bound of interval to count events on</p></li>
+<li><p><strong>high</strong> (<em>integer</em>) – high bound of interval to count events on</p></li>
+<li><p><strong>ev_names</strong> (<em>array</em>) – Array containing event names of events to be used.</p></li>
+<li><p><strong>fail_period</strong> (<em>integer</em>) – Only meters that fail from high to high+fail_period
+will be included in the failing meters dataset.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X_u</strong> (<em>list</em>) – Each element contains the event count. The first list element
+contains functioning meters, second element failing meters</p></li>
+<li><p><strong>ev_names</strong> (<em>array</em>) – Array containing event names of events to be used.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="faulty_meters.fail_prediction.ev_counts.preprocess_data_fail_pred.select_mets_evs">
+<span class="sig-name descname"><span class="pre">select_mets_evs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">firsts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lasts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ev_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_ev</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.fail_prediction.ev_counts.preprocess_data_fail_pred.select_mets_evs" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method selects the meters that were active when the
+event data was collected, as well as the events that are
+nonzero for the active meters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>firsts</strong> (<em>list</em>) – The first list element contains the array for
+functioning meters, second element failing meters</p></li>
+<li><p><strong>lasts</strong> (<em>list</em>) – The first list element contains the array for
+functioning meters, second element failing meters</p></li>
+<li><p><strong>low</strong> (<em>integer</em>) – low bound of interval to count events on</p></li>
+<li><p><strong>high</strong> (<em>integer</em>) – high bound of interval to count events on</p></li>
+<li><p><strong>ev_names</strong> (<em>array</em>) – Array containing event names of events to be used.</p></li>
+<li><p><strong>min_ev</strong> (<em>integer</em><em> (</em><em>optional</em><em>)</em>) – Minimum number of event occurrences meters must have
+for the event to be included.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>X</strong> (<em>list</em>) – It contains functioning meters in the first element,
+failing in the second.</p></li>
+<li><p><strong>ev_names</strong> (<em>array</em>) – Array containing event names of events to be used.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="faulty_meters.fail_prediction.ev_counts.roc_curves">
+<span class="sig-prename descclassname"><span class="pre">faulty_meters.fail_prediction.ev_counts.</span></span><span class="sig-name descname"><span class="pre">roc_curves</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">probs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.fail_prediction.ev_counts.roc_curves" title="Permalink to this definition">¶</a></dt>
+<dd><p>It calculates the roc curves for training and testing data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>probs</strong> (<em>list</em>) – Output probabilities.</p></li>
+<li><p><strong>labels</strong> (<em>list</em>) – Labels of training and testing.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>fprs</strong> (<em>list</em>) – False positive rate, aka probability of false alarm (PFA)</p></li>
+<li><p><strong>tprs</strong> (<em>list</em>) – True positive rate, aka probability of detection (PD)</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="faulty_meters.anomaly_detection.html" class="btn btn-neutral float-right" title="faulty_meters.anomaly_detection module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="faulty_meters.fail_prediction.autoencoder.html" class="btn btn-neutral float-left" title="faulty_meters.fail_prediction.autoencoder module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Carlos.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

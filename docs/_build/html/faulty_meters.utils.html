@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>faulty_meters.utils module &mdash; Faulty meters study 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="faulty_meters.visualization_SD_freq_meters module" href="faulty_meters.visualization_SD_freq_meters.html" />
+    <link rel="prev" title="faulty_meters.run_fail_pred module" href="faulty_meters.run_fail_pred.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Faulty meters study
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">faulty_meters</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="faulty_meters.html">faulty_meters package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="faulty_meters.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="faulty_meters.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="faulty_meters.anomaly_detection.html">faulty_meters.anomaly_detection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faulty_meters.fail_pred.html">faulty_meters.fail_pred module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faulty_meters.nn_train_test.html">faulty_meters.nn_train_test module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faulty_meters.run_anom_detection.html">faulty_meters.run_anom_detection module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faulty_meters.run_fail_pred.html">faulty_meters.run_fail_pred module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">faulty_meters.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faulty_meters.visualization_SD_freq_meters.html">faulty_meters.visualization_SD_freq_meters module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faulty_meters.visualization_nns_anom_detection.html">faulty_meters.visualization_nns_anom_detection module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="faulty_meters.html#module-faulty_meters">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Faulty meters study</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">faulty_meters</a> &raquo;</li>
+        
+          <li><a href="faulty_meters.html">faulty_meters package</a> &raquo;</li>
+        
+      <li>faulty_meters.utils module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/faulty_meters.utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-faulty_meters.utils">
+<span id="faulty-meters-utils-module"></span><h1>faulty_meters.utils module<a class="headerlink" href="#module-faulty_meters.utils" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="faulty_meters.utils.daily_consumption">
+<span class="sig-prename descclassname"><span class="pre">faulty_meters.utils.</span></span><span class="sig-name descname"><span class="pre">daily_consumption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.daily_consumption" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function takes the cumulative consumption
+and computes the daily consumption.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>array</em>) – The shape should be (n,m), where n is the number
+of meters, and m the length.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – The daily consumption array whose shape is the
+same as the original array.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="faulty_meters.utils.data_prepocessing">
+<span class="sig-prename descclassname"><span class="pre">faulty_meters.utils.</span></span><span class="sig-name descname"><span class="pre">data_prepocessing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shuffle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indexes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.data_prepocessing" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function takes the raw cumulative KWH and outputs
+the clean daily KWH.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>array</em>) – This array has shape (n,m), where n is the number of
+meters, and m is time.</p></li>
+<li><p><strong>shuffle</strong> (<em>bool</em><em> (</em><em>optional</em><em>)</em>) – Indicates whether the meters will be shuffled or not.</p></li>
+<li><p><strong>indexes</strong> (<em>bool</em><em> (</em><em>optional</em><em>)</em>) – Indicates whether certain meters are excluded or not.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – Generally the shape will be (p,m), where p&lt;n because some
+meters were discarded.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="faulty_meters.utils.ids_select">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">faulty_meters.utils.</span></span><span class="sig-name descname"><span class="pre">ids_select</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.ids_select" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This function does data cleaning by selecting the
+meter indexes that satisfy the data cleaning conditions.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="faulty_meters.utils.ids_select.indexes">
+<span class="sig-name descname"><span class="pre">indexes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.ids_select.indexes" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method collects all the indexes from the conditions
+and calculates their intersection.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="faulty_meters.utils.ids_select.large">
+<span class="sig-name descname"><span class="pre">large</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.ids_select.large" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method enforces that unrealistically large.
+KWH consumptions are excluded</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="faulty_meters.utils.ids_select.nans">
+<span class="sig-name descname"><span class="pre">nans</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.ids_select.nans" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method enforces the no nan condition.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="faulty_meters.utils.ids_select.neg_kwh">
+<span class="sig-name descname"><span class="pre">neg_kwh</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.ids_select.neg_kwh" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method enforces that there is no negative.
+KWH consumption</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="faulty_meters.utils.normalization_0_1">
+<span class="sig-prename descclassname"><span class="pre">faulty_meters.utils.</span></span><span class="sig-name descname"><span class="pre">normalization_0_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.normalization_0_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>It normalizes between 0 and 1 along the last axis of array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<em>array</em>) – Array can have any size, and normalization occurs in the last
+axis.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>array</strong> – The normalized array between 0 and 1.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>ndarray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="faulty_meters.utils.plot_roc_curves">
+<span class="sig-prename descclassname"><span class="pre">faulty_meters.utils.</span></span><span class="sig-name descname"><span class="pre">plot_roc_curves</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tprs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fprs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">labels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">linestyle</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#faulty_meters.utils.plot_roc_curves" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function plots roc curves and saves the image file to
+the folder figures.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tprs</strong> (<em>list</em>) – True positive rates (PD)</p></li>
+<li><p><strong>fprs</strong> (<em>list</em>) – False positive rates (PFA)</p></li>
+<li><p><strong>labes</strong> (<em>list</em>) – Labels assigned to each curve in tprs and fprs</p></li>
+<li><p><strong>cols</strong> (<em>list</em>) – Colors assigned to each curve in tprs and fprs</p></li>
+<li><p><strong>linestyle</strong> (<em>list</em>) – Linestyles assigned to each curve in tprs and fprs</p></li>
+<li><p><strong>name</strong> (<em>string</em>) – name of the image. It is saved in the folder figures</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="faulty_meters.visualization_SD_freq_meters.html" class="btn btn-neutral float-right" title="faulty_meters.visualization_SD_freq_meters module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="faulty_meters.run_fail_pred.html" class="btn btn-neutral float-left" title="faulty_meters.run_fail_pred module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Carlos.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

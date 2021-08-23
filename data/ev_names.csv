@@ -1,0 +1,65 @@
+Caution 000400 Under Voltage
+Caution 000400 Under Voltage Condition Cleared
+Checksum Error In Flash Memory
+Cmds: Report Hard iMODULE Reset(21)
+Commercial Energy Threshold Exceeded
+Configuration error detected 
+DCW firmware change complete
+DCW pre-empted or removed
+DSP error
+Demand overload detected
+Diagnostic 1 Condition Cleared
+"Diagnostic 1 Polarity, Cross Phase, Rv Energy Flow"
+Diagnostic 2 Voltage Imbalance
+Diagnostic 3 Condition Cleared
+Diagnostic 3 Inactive Phase Current
+Diagnostic 4 Condition Cleared
+Diagnostic 4 Phase Angle Alert
+Diagnostic 5 Condition Cleared
+Diagnostic 5 High Distortion
+Diagnostic 6 Condition Cleared
+"Diagnostic 6 UnderVoltage, Phase A"
+Diagnostic 7 Condition Cleared
+"Diagnostic 7 Over Voltage, Phase A"
+Download Failure
+Endpoint Configuration Changed
+Endpoint Power Outage
+Endpoint Power Restore
+Energy Polarity Check Error
+Error In Flash Memory
+Error occurred while assigning a SoftID to the meter
+Exceeds the maximum allowable layers event
+Firmware Debug 1
+Interval Data Gap Reconciliation Retry Expired
+Invalid Service
+Large DCW installed
+Leading kvarh
+Low battery detected
+Measurement error detected
+Meter Flash Attempt
+Meter firmware change complete
+Module firmware change complete
+Nonvolatile memory failure detected
+Primary Power Down
+ROM failure detected 
+Reset List Pointers
+Reverse Rotation detected
+Self Read Gap Reconciliation Retry Expired
+Service Connect Started
+Service Connect Successful
+Service Disconnect Started
+Service Disconnect Successful
+"Special, Schedule Activation"
+Standby Accumulation Error
+System Error
+Temperature Threshold Exceeded Error
+Test mode Start Date
+Test mode stopped
+Time sync failed:Meter I/O/clock failure(38)
+Unprogrammed
+User Programmable Temperature Threshold Exceeded
+Voltage Max Threshold
+Voltage Min Threshold
+Voltage Phase Angle Error
+Voltage RMS Magnitude Error
+Zigbee Comm/Initialization Error
