@@ -21,7 +21,7 @@ the ```run``` files because they do not contain function themselves, but instead
 
 ## Anomaly detection
 
-To run the KWH anomaly detection algorithms run the following command from the terminal
+To execute the KWH anomaly detection algorithms run the following command from the terminal
 
 ```PowerShell
 python run_anom_detection.py <filename>
@@ -52,4 +52,31 @@ The visualizations look like this respectively:
 
 and 
 
+![SD_ss](https://user-images.githubusercontent.com/35930061/130512458-dba51e30-c2fe-41a6-9276-03aee9593253.png)
 
+Each point on the top plot represents a meter. The coordinates are the anomalies scores computed by the approach with two
+different hyper-parameters. For example, ```er1``` in the neural network visualization was computed with a 3-layer neural 
+network; ```er2``` with a 5-layer neural network. When hovering over each meter, the plots below will display the KWH curve
+for that meter as well as the error curve in the case of neural network. Additionally, the scores can also be sorted by 
+ranking by clicking on the top bar and selecting ```Rankings``` instead of ```Errors```.
+
+> These programs compute the anomaly scores and display them interactively, but they do not do the thresholding for selecting
+> what meters are anomalies and what meters are not.
+
+## Failure prediction
+
+To run the failure prediction algorithms run the following command from the terminal
+
+```PowerShell
+python run_fail_pred.py <name>
+```
+
+```<name>``` can be ```bus_N``` or ```bus_B```.
+
+By default both failure prediction algorithms will be executed, that is: event counts and autoencoder. The outputs are the roc
+curves images that get saved in the ```figures``` folder. For other results the original code can be modified. The autoencoder
+uses KWH as opposed to events, which it what was presented in the report.
+
+*when choosing the period over which to count events in the event counts algorithm make sure there are enough failing meters
+that failed during that interval. Otherwise that class could be empty, in which the algorithm might throw an error, or give
+errroneous results*
