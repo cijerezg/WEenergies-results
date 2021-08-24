@@ -107,7 +107,7 @@ def AE_fail_prediction(data, model, firsts, lasts, low, high,
     nn_model = nn_train_test.nn_model(model)
     if train==True:
         path_model = 'nn_models/autoencoder.pth'
-        train_loss = nn_model.train(U_train, 2000, 0.001, AE.trainig,
+        train_loss = nn_model.train(U_train, 1000, 0.001, AE.trainig,
                                     save=True, path=path_model)
     loss_u, output_u = nn_model.test(U_test, AE.testing)
     loss_f, output_f = nn_model.test(F_test, AE.testing)
